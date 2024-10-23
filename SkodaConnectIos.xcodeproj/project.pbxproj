@@ -30,11 +30,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E3E00C622CC82C8900FEC685 /* SkodaConnectIos */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SkodaConnectIos;
-			sourceTree = "<group>";
-		};
 		E3E00C742CC82C8D00FEC685 /* SkodaConnectIosTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SkodaConnectIosTests;
@@ -43,6 +38,11 @@
 		E3E00C7E2CC82C8D00FEC685 /* SkodaConnectIosUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SkodaConnectIosUITests;
+			sourceTree = "<group>";
+		};
+		E3E00CB12CC8663B00FEC685 /* SkodaConnectIos */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SkodaConnectIos;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +75,7 @@
 		E3E00C572CC82C8900FEC685 = {
 			isa = PBXGroup;
 			children = (
-				E3E00C622CC82C8900FEC685 /* SkodaConnectIos */,
+				E3E00CB12CC8663B00FEC685 /* SkodaConnectIos */,
 				E3E00C742CC82C8D00FEC685 /* SkodaConnectIosTests */,
 				E3E00C7E2CC82C8D00FEC685 /* SkodaConnectIosUITests */,
 				E3E00C612CC82C8900FEC685 /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				E3E00C622CC82C8900FEC685 /* SkodaConnectIos */,
+				E3E00CB12CC8663B00FEC685 /* SkodaConnectIos */,
 			);
 			name = SkodaConnectIos;
 			packageProductDependencies = (
