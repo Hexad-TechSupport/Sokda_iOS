@@ -26,10 +26,10 @@ struct CategoryView: View {
                 .padding(.leading, 10)
             
                 VStack(alignment: .leading) {
-                    Text("Total distance")
+                    Text("Average speed")
                         .font(Font.custom("SKODANext-Regular", size: 10))
                         .foregroundStyle(Color("Username"))
-                    Text("250 km")
+                    Text("50 Km/hr")
                         .font(Font.custom("SKODANext-Bold", size: 16))
                         
                         .foregroundStyle(Color("Username"))
@@ -37,10 +37,10 @@ struct CategoryView: View {
                 .padding(.leading, 10)
             
                 VStack(alignment: .leading) {
-                    Text("Total distance")
+                    Text("Mileage")
                         .font(Font.custom("SKODANext-Regular", size: 10))
                         .foregroundStyle(Color("Username"))
-                    Text("250 km")
+                    Text("18 Km/hr")
                         .font(Font.custom("SKODANext-Bold", size: 16))
                         
                         .foregroundStyle(Color("Username"))

@@ -27,6 +27,7 @@ struct ActionsView: View {
                         .foregroundStyle(Color("Username"))
                 }
                 .padding(.leading, 10)
+                .frame(width: width / 2.0)
             
             VStack(alignment: .leading) {
                 Image(.lock)
