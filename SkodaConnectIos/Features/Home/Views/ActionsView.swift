@@ -13,43 +13,44 @@ struct ActionsView: View {
     var height: CGFloat
     
     var body: some View {
-        HStack(alignment: .top, spacing: 35) {
+        HStack(alignment: .top) {
                 VStack(alignment: .leading) {
                     Image(.engine)
                         .frame(width: 40,height: 40)
+                        .padding(.top, 10)
                     Text("Engine Off")
                         .font(Font.custom("SKODANext-Bold", size: 16))
                         
                         .foregroundStyle(Color("Username"))
                     Text("Engine status is in rest mode")
-                        .font(Font.custom("SKODANext-Bold", size: 16))
+                        .font(Font.custom("SKODANext-Regular", size: 8))
                         
                         .foregroundStyle(Color("Username"))
+                        .padding(.bottom, 10)
                 }
-                .padding(.leading, 10)
-                .frame(width: width / 2.0)
+                .frame(width: (width - 58) / 2.0)
+                .cornerRadius(10)
+                .border(Color("CategoryViewBorder"), width: 0.5)
+
             
             VStack(alignment: .leading) {
                 Image(.lock)
                     .frame(width: 40,height: 40)
+                    .padding(.top, 10)
                 Text("Engine Off")
                     .font(Font.custom("SKODANext-Bold", size: 16))
                     
                     .foregroundStyle(Color("Username"))
                 Text("Tap on the lock icon to unlock your car")
-                    .font(Font.custom("SKODANext-Bold", size: 16))
-                    
+                    .font(Font.custom("SKODANext-Regular", size: 8))
+                    .padding(.bottom, 10)
                     .foregroundStyle(Color("Username"))
             }
-            .padding(.leading, 10)
-       
-        
+            .frame(width: (width - 58) / 2.0)
+            .cornerRadius(10)
+            .border(Color("CategoryViewBorder"), width: 0.5)
       }
-      .padding(.horizontal, 24)
       .frame(height: height)
-      .cornerRadius(25)
-      .padding(.horizontal, 24)
-      .border(Color("CategoryViewBorder"), width: 0.5)
       .background(.white)
     }
 }
