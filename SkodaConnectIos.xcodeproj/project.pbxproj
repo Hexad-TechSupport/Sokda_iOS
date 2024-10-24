@@ -29,6 +29,16 @@
 		E3E00C7B2CC82C8D00FEC685 /* SkodaConnectIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkodaConnectIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E3E00CD42CC9F3C700FEC685 /* Exceptions for "SkodaConnectIos" folder in "SkodaConnectIos" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E3E00C5F2CC82C8900FEC685 /* SkodaConnectIos */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E3E00C742CC82C8D00FEC685 /* SkodaConnectIosTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -42,6 +52,9 @@
 		};
 		E3E00CB12CC8663B00FEC685 /* SkodaConnectIos */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E3E00CD42CC9F3C700FEC685 /* Exceptions for "SkodaConnectIos" folder in "SkodaConnectIos" target */,
+			);
 			path = SkodaConnectIos;
 			sourceTree = "<group>";
 		};
@@ -394,6 +407,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SkodaConnectIos/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkodaConnectIos/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -431,6 +445,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SkodaConnectIos/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkodaConnectIos/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

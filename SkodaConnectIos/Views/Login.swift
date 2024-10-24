@@ -16,30 +16,60 @@ struct LoginScreen: View {
 
     var body: some View {
         VStack {
-            
-            Spacer()
-            
             VStack {
-                TextField(
-                    "Username",
-                    text: $viewModel.username
-                )
-                .disableAutocorrection(true)
+                Image(.icon)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit).frame(width: 400, height: 200, alignment: .top)
+                Text("Login")
+                    .font(Font.custom("SKODANext-Bold", size: 24))
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Email/Username")
+                        .font(Font.custom("SKODANext-Regular", size: 10))
+                        .foregroundStyle(Color("BlackLight"))
+                    TextField(
+                        "Username",
+                        text: $viewModel.username
+                    )
+                    .disableAutocorrection(true)
+                    .frame(height: 50)
+                    .border(Color("TextFieldBorder"), width: 2)
+                    .cornerRadius(10)
+                }
+                .padding(.top, 40)
+
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Email/Username")
+                        .font(Font.custom("SKODANext-Regular", size: 10))
+                        .foregroundStyle(Color("BlackLight"))
+                    SecureField(
+                        "Password",
+                        text: $viewModel.password
+                    )
+                    .frame(height: 50)
+                    .border(Color("TextFieldBorder"), width: 2)
+                    .cornerRadius(10)
+                }
                 .padding(.top, 20)
                 
-                Divider()
+                HStack {
+                                Spacer()
+                    Button(
+                        action: {
+                        
+                        },
+                        label: {
+                            Text("Forgot password?")
+                                .font(Font.custom("SKODANext-Regular", size: 12))
+                                .foregroundColor(Color("ForgotRed"))
+                                
+                        }
+                    )
+                                    .padding(.trailing, 0)
+                            }
                 
-                SecureField(
-                    "Password",
-                    text: $viewModel.password
-                )
-                .padding(.top, 20)
-                
-                Divider()
             }
-            
-            Spacer()
-            
+                        
             Button(
                 action: {
                     if viewModel.username == k.user.username && viewModel.password == k.user.password {
@@ -48,16 +78,38 @@ struct LoginScreen: View {
                 },
                 label: {
                     Text("Login")
-                        .font(.system(size: 24, weight: .bold, design: .default))
+                        .font(Font.custom("SKODANext-Bold", size: 20))
                         .frame(maxWidth: .infinity, maxHeight: 60)
                         .foregroundColor(Color.white)
-                        .background(Color.blue)
+                        .background(Color("GreenButton"))
                         .cornerRadius(10)
                 }
             )
+            .padding(.top, 30)
             .alert(isPresented: self.$showsAlert) {
                         Alert(title: Text("Login successfull"))
                     }
+            
+            HStack(spacing: 5) {
+                Text("New user?")
+                    .font(Font.custom("SKODANext-Regular", size: 16))
+                    .foregroundStyle(Color.black)
+                
+                Button(
+                    action: {
+                    
+                    },
+                    label: {
+                        Text("Forgot password?")
+                            .font(Font.custom("SKODANext-Regular", size: 16))
+                            .foregroundColor(Color("GreenButton"))
+                            
+                    }
+                )
+                .padding(.leading, 0)
+                        }
+            .padding(.top, 10)
+
         }
         .padding(30)
     }
