@@ -11,7 +11,7 @@ import SwiftUI
 struct SkodaConnectIosApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginScreen()
+            DashboardView()
         }
     }
 }
