@@ -28,6 +28,8 @@ struct DashboardView: View {
 
                   CategoryView(width: viewWidth, height: 71)
                       .padding(.top, 200)
+                ActionsView(width: viewWidth, height: 71)
+                    .padding(.top, 10)
             }
          
           
