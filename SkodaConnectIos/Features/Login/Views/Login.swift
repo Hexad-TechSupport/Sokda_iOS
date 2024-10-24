@@ -17,7 +17,7 @@ struct LoginScreen: View {
     var body: some View {
         VStack {
             VStack {
-                Image(.icon)
+                Image(.logo)
                     .resizable()
                     .aspectRatio(contentMode: .fit).frame(width: 400, height: 200, alignment: .top)
                 Text("Login")

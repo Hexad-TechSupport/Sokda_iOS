@@ -21,7 +21,7 @@ struct ActionsView: View {
                         .font(Font.custom("SKODANext-Bold", size: 16))
                         
                         .foregroundStyle(Color("Username"))
-                    Text("Engine Off")
+                    Text("Engine status is in rest mode")
                         .font(Font.custom("SKODANext-Bold", size: 16))
                         
                         .foregroundStyle(Color("Username"))
@@ -36,7 +36,7 @@ struct ActionsView: View {
                     .font(Font.custom("SKODANext-Bold", size: 16))
                     
                     .foregroundStyle(Color("Username"))
-                Text("Engine Off")
+                Text("Tap on the lock icon to unlock your car")
                     .font(Font.custom("SKODANext-Bold", size: 16))
                     
                     .foregroundStyle(Color("Username"))
