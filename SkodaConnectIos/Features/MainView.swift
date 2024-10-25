@@ -35,5 +35,6 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView()
+    LoginScreen()
+    //    MainView()
 }
