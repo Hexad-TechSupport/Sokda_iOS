@@ -1,7 +1,14 @@
+//
+//  Data.swift
+//  SkodaConnectIos
+//
+//  Created by Utkarsh Jaiswal on 25/10/24.
+//
+
 import SwiftUI
 import Charts
 
-struct DashboardView: View {
+struct DataView: View {
   
   @State private var resize = false
   
@@ -36,7 +43,7 @@ struct DashboardView: View {
   }
 }
 
-struct DashboardView_Previews: PreviewProvider {
+struct DataView_Previews: PreviewProvider {
   static var previews: some View {
     DashboardView()
   }

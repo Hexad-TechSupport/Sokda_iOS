@@ -2,10 +2,9 @@
 //  Login.swift
 //  SkodaConnectIos
 //
-//  Created by dhananjay-m-create on 23/10/24.
+//  Created by Utkarsh Jaiswal on 23/10/24.
 //
 
-import SwiftUI
 
 import SwiftUI
 
