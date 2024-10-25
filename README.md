@@ -8,25 +8,23 @@ The Škoda App is a demo mobile application designed to enhance the user experie
 - License management
 - Vehicle status monitoring
 - Remote access to vehicle features
-- Infotainment access
-- Media streaming
 - Real-time navigation
 - Safe driving UI
 - API for license management
 - Vehicle data API
 - Monitoring and analytics
 - CI/CD automation
-- **PayFuel** feature (to be implemented)
 
 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Hexad-TechSupport/Sokda_iOS.git
+   
 
 
 2. Navigate to the project directory:
    ```bash
-    cd your-repository
+    cd Sokda_iOS
 
 3. Open the project in Xcode.
